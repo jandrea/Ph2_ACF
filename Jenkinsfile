@@ -13,7 +13,8 @@ pipeline {
           steps {
             sh 'mkdir build'
             sh 'cd build'
-            sh 'cmake ..'
+            sh '''pwd
+'''
             sh 'make -2'
           }
         }
