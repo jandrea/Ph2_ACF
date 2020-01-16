@@ -6,7 +6,6 @@ pipeline {
         stage('error') {
           steps {
             echo 'Start Building code'
-            sh 'source setup.sh'
           }
         }
 
@@ -16,7 +15,6 @@ pipeline {
             sh 'cd build'
             sh 'cmake ..'
             sh 'make -2'
-            sh 'source setup.sh'
           }
         }
 
