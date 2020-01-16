@@ -11,10 +11,9 @@ pipeline {
 
         stage('Building') {
           steps {
-            sh '''echo "Hello wolrd"
-
-
-  ; ./TestJenkins;'''
+            sh '''
+./TestJenkins
+'''
           }
         }
 
