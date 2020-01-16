@@ -11,9 +11,9 @@ pipeline {
 
         stage('Building') {
           steps {
-            sh '''
-./TestJenkins
-'''
+            sh 'cd build'
+            sh 'cmake ..'
+            sh 'make -j2'
           }
         }
 
