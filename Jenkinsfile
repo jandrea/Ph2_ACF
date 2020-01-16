@@ -11,11 +11,7 @@ pipeline {
 
         stage('Building') {
           steps {
-            sh 'mkdir build'
-            sh 'cd build'
-            sh '''pwd
-'''
-            sh 'make -2'
+            sh 'mkdir build ; cd build ; cmake .. ; make -j2;'
           }
         }
 
