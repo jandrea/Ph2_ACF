@@ -11,7 +11,7 @@ pipeline {
 
         stage('Building') {
           steps {
-            sh 'source setup.sh; mkdir build ; cd build ; cmake .. ;  make -j2;'
+            sh 'ls; source setup.sh; mkdir build ; cd build ; cmake .. ;  make -j2;'
           }
         }
 
