@@ -11,7 +11,7 @@ pipeline {
 
         stage('Building') {
           steps {
-            sh 'source setup.sh && echo CompileForHerd = $CompileForHerd - CompileForShep = $CompileForShep - UseRootFlag = $UseRootFlag; mkdir build && cd build && cmake .. &&  make -j2 VERBOSE=1;'
+            sh 'ls; ./setup.sh && echo CompileForHerd = $CompileForHerd - CompileForShep = $CompileForShep - UseRootFlag = $UseRootFlag; mkdir build && cd build && cmake .. &&  make -j2 VERBOSE=1;'
           }
         }
 
